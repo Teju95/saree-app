@@ -7,7 +7,7 @@ import Layout from "./components/Layout";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/saree-app">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
