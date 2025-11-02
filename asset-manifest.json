@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/saree-app/static/css/main.b6f3c06f.css",
-    "main.js": "/saree-app/static/js/main.fd067ea9.js",
+    "main.js": "/saree-app/static/js/main.685a5a40.js",
     "static/js/453.ee3f6c5b.chunk.js": "/saree-app/static/js/453.ee3f6c5b.chunk.js",
     "static/media/pewter-bs.avif": "/saree-app/static/media/pewter-bs.22811bcde25f3781f7f7.avif",
     "static/media/pink_saree.webp": "/saree-app/static/media/pink_saree.7c437c90ca538aa59a56.webp",
@@ -13,11 +13,11 @@
     "static/media/manogna_logo.jpg": "/saree-app/static/media/manogna_logo.3239324cd4d11df37c03.jpg",
     "index.html": "/saree-app/index.html",
     "main.b6f3c06f.css.map": "/saree-app/static/css/main.b6f3c06f.css.map",
-    "main.fd067ea9.js.map": "/saree-app/static/js/main.fd067ea9.js.map",
+    "main.685a5a40.js.map": "/saree-app/static/js/main.685a5a40.js.map",
     "453.ee3f6c5b.chunk.js.map": "/saree-app/static/js/453.ee3f6c5b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b6f3c06f.css",
-    "static/js/main.fd067ea9.js"
+    "static/js/main.685a5a40.js"
   ]
 }
