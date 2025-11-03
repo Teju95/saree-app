@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Catalog from "./pages/Catalog";
 import Contact from "./pages/Contact";
@@ -7,7 +7,7 @@ import Layout from "./components/Layout";
 
 function App() {
   return (
-    <Router basename="/saree-app">
+    <Router>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />

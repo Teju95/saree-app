@@ -1,0 +1,27 @@
+.contact-container {
+  min-height: 80vh;
+  background-color: #faf6f2; /* soft beige tone, fashion-like */
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border: 1px solid #e2d5c3;
+}
+
+.contact-form h2 {
+  font-family: "Playfair Display", serif;
+  color: #7a3e1d;
+}
+
+.contact-form .btn-dark {
+  background-color: #7a3e1d;
+  border-color: #7a3e1d;
+  transition: 0.3s;
+}
+
+.contact-form .btn-dark:hover {
+  background-color: #a44b22;
+  border-color: #a44b22;
+}
