@@ -38,8 +38,8 @@ export default function Catalog() {
     .map((item, index) => ({ ...item, id: index + 1 }));
   return (
     <div>
-      <div class="container">
-        <div class="row">
+      <div className="container">
+        <div className="row">
           <h3 className="text-center pt-4 pb-5">Sarees</h3>
           {products.map((product) => (
             <div key={product.id} className="col-12 col-sm-6 col-md-3 mb-4">

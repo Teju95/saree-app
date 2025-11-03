@@ -1,16 +1,18 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../images/manogna_logo.jpg";
 
 export default function Header() {
   return (
-    <header class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-          <img src={logo} alt="Logo" height={50} width={50} />
+    <header className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div className="container-fluid">
+        {/* Use Link instead of a tag */}
+        <Link className="navbar-brand d-flex align-items-center" to="/">
+          <img src={logo} alt="Logo" height={50} width={50} className="me-2" />
           Manogna Sarees
-        </a>
+        </Link>
+
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -18,44 +20,32 @@ export default function Header() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
+
         <div
-          class="collapse navbar-collapse justify-content-end"
+          className="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link className="nav-link active" to="/">
                 Home
-              </a>
+              </Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/catalog">
+            <li className="nav-item">
+              <Link className="nav-link" to="/catalog">
                 Catalog
-              </a>
+              </Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact">
+            <li className="nav-item">
+              <Link className="nav-link" to="/contact">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
       </div>
     </header>
-    // <header className="d-flex justify-content-between align-items-center p-3 shadow">
-    //   <nav className="d-flex gap-3">
-    //     <Link to="/" className="text-decoration-none">
-    //       Home
-    //     </Link>
-    //     <Link to="/catalog" className="text-decoration-none">
-    //       Catalog
-    //     </Link>
-    //     <Link to="/contact" className="text-decoration-none">
-    //       Contact
-    //     </Link>
-    //   </nav>
-    // </header>
   );
 }
