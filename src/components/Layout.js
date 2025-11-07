@@ -3,9 +3,9 @@ import Footer from "../components/Footer";
 import "./Layout.css";
 export default function Layout({ children }) {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid p-0">
       <Header />
-      <main>{children}</main>
+      <main className="mb-3">{children}</main>
       <Footer />
     </div>
   );
