@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <>
-      <footer className="bg-dark text-white text-center py-4 mt-10">
+      <footer
+        className="bg-dark text-white text-center py-4"
+        style={{ position: "relative", top: "85px", zIndex: 2 }}
+      >
         <div className="container">
-          <div className="row text-center py-3">
+          <div className="row text-center ">
             <div className="col-lg-3 col-sm-3 col-xs-3">
-              <Link className="nav-link active" to="/">
+              <Link className="nav-link" to="/">
                 Home
               </Link>
             </div>
@@ -22,7 +25,7 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          <div className="footer_copyright py-3">
+          <div className="footer_copyright pt-3">
             <p>© 2025 Manogna Sarees. All Rights Reserved.</p>
           </div>
         </div>

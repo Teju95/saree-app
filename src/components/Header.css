@@ -1,0 +1,29 @@
+header {
+  position: relative;
+  height: 85px;
+}
+
+.nav-item {
+  border-radius: 5px;
+}
+
+.nav-button {
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  color: #000;
+  &:hover {
+    border-radius: 5px;
+    background-color: #34af49;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.nav-link.active {
+  color: #fff !important;
+  background-color: #af3488;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+}

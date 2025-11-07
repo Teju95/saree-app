@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import logo from "../images/manogna_logo.jpg";
+import "./Header.css";
 
 export default function Header() {
   return (
@@ -29,19 +30,34 @@ export default function Header() {
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link active" to="/">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-button"
+                }
+                to="/"
+              >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/catalog">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-button"
+                }
+                to="/catalog"
+              >
                 Catalog
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-button"
+                }
+                to="/contact"
+              >
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>

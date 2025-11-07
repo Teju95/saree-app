@@ -3,13 +3,14 @@
 } */
 
 header {
-  position: sticky;
   top: 0;
-  height: 85px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 main {
-  height: calc(100% - 85px);
+  z-index: 1;
+  position: relative;
+  top: 85px;
 }
 
 footer {
